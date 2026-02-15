@@ -1,497 +1,316 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RED PILL | Elite Web3 Growth Partner</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;700&display=swap" as="style">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Pill Method | Wake Up</title>
+    <link rel="icon" href="https://i.postimg.cc/HsWbnx0G/image.png" type="image/png">
+
+    <!-- Meta Tags for SEO and Social Media -->
+    <meta name="description" content="The ultimate blueprint for understanding crypto markets, building real value, and achieving financial sovereignty. Stop watching. Start building.">
+
+    <!-- Open Graph / WhatsApp / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Red Pill Method | Wake Up & Build Freedom">
+    <meta property="og:description" content="We don’t teach generic trading. We teach how crypto launches work and how to understand them from the ground up. Join the real builders.">
+    <meta property="og:image" content="https://i.postimg.cc/HsWbnx0G/image.png">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Red Pill Method | Wake Up & Build Freedom">
+    <meta name="twitter:description" content="We don’t teach generic trading. We teach how crypto launches work and how to understand them from the ground up.">
+    <meta name="twitter:image" content="https://i.postimg.cc/HsWbnx0G/image.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* FOUT Fix: Hide body until fonts are loaded or fallback quickly */
-        html { visibility: visible; opacity: 1; }
-        
-        /* Font loading optimization */
-        .wf-loading body {
-            visibility: hidden;
-        }
-        /* CRITICAL: Keep loading screen visible even when body is hidden */
-        .wf-loading body #loading-screen {
-            visibility: visible;
-            opacity: 1;
-        }
-        .wf-active body, .wf-inactive body {
-            visibility: visible;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
+        body { font-family: 'Montserrat', sans-serif; }
+        .text-shadow { text-shadow: 2px 2px 10px rgba(0,0,0,0.8); }
+        .section-height { min-height: 100dvh; }
     </style>
-    <script>
-        // Simple font loader check to prevent FOUT
-        document.documentElement.classList.add('wf-loading');
-        window.addEventListener('load', function() {
-            document.documentElement.classList.remove('wf-loading');
-            document.documentElement.classList.add('wf-active');
-        });
-        // Fallback safety
-        setTimeout(function() {
-            document.documentElement.classList.remove('wf-loading');
-            document.documentElement.classList.add('wf-inactive');
-        }, 1500);
-    </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css" />
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="LABS.png">
-    <link rel="shortcut icon" type="image/png" href="LABS.png">
-    <link rel="apple-touch-icon" href="LABS.png">
 </head>
-<body>
+<body class="bg-black text-white antialiased overflow-x-hidden">
 
-    <!-- ========= LOADING SCREEN ========= -->
-    <div id="loading-screen">
-        <div class="loader-content">
-            <img src="LABS.png" alt="Loading..." class="loader-logo">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 px-6 py-5 flex justify-between items-center bg-gradient-to-b from-black via-black/80 to-transparent">
+        <div class="text-2xl md:text-3xl font-black text-white tracking-tighter">
+            RED PILL <span class="text-red-600">METHOD</span>
         </div>
-    </div>
+        <a href="#join" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 text-sm uppercase tracking-widest transition-all hover:scale-105">
+            JOIN
+        </a>
+    </nav>
 
-    <!-- ========= HEADER ========= -->
-    <header class="app-header">
-        <div class="container header-content">
-            <a href="#" class="brand-logo">
-                <img src="LABS.png" alt="Red Pill Labs Logo" class="header-logo-img">
-                Red Pill Labs
-            </a>
-            <nav class="desktop-nav">
-                <a href="#services">Services</a>
-                <a href="#ecosystem">Ecosystem</a>
-                <a href="#plans">Plans</a>
-                <a href="#team">Team</a>
-                <a href="#results">Track Record</a>
-            </nav>
-            <div class="header-right">
-                <a href="#vision" class="btn btn-primary">Start Growth</a>
-                <button id="mobile-menu-btn" class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+    <!-- Section 1: Hero - The Awakening -->
+    <section class="relative section-height py-20 flex items-center justify-center overflow-hidden border-b border-red-900/30">
+        <!-- Background Video Placeholder -->
+        <div class="absolute inset-0 z-0 bg-neutral-900">
+            <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover opacity-80">
+                <!-- User should replace this source -->
+                <source src="1.mp4" type="video/mp4">
+            </video>
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-black/40"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto mt-16">
+            <h2 class="text-red-600 font-bold tracking-[0.3em] uppercase mb-4 animate-pulse">RED PILL METHOD</h2>
+            <h1 class="text-5xl md:text-7xl font-black mb-8 tracking-tighter text-white text-shadow leading-tight">
+                WAKE UP AND BUILD <br/><span class="text-red-600">YOUR FREEDOM</span>
+            </h1>
+            <p class="text-lg md:text-xl font-medium text-gray-300 mb-10 max-w-4xl mx-auto leading-relaxed">
+                We are a team focused on helping both new and experienced crypto investors through real educational content. We don’t teach generic trading we teach how crypto launches work and how to understand them from the ground up.
+            </p>
+        </div>
+    </section>
+
+    <!-- Section 2: The Lie -->
+    <section id="problem" class="relative section-height py-20 flex items-center justify-center overflow-hidden border-b border-red-900/30">
+        <div class="absolute inset-0 z-0 bg-neutral-900">
+            <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover opacity-70">
+                <source src="02.mp4" type="video/mp4">
+            </video>
+            <div class="absolute inset-0 bg-black/30"></div>
+        </div>
+
+        <div class="relative z-10 grid md:grid-cols-2 gap-12 max-w-7xl mx-auto px-6 items-center">
+            <div class="text-left">
+                <h2 class="text-4xl md:text-6xl font-black mb-6 tracking-tight text-white">
+                <br>A FEW DECIDE TO <span class="text-red-600">BUILD</span>.
+                </h2>
+                <div class="h-1 w-20 bg-red-600 mb-8"></div>
+                <p class="text-xl text-gray-300 mb-6 leading-relaxed">
+                    Every day, millions scroll through crypto, watching charts, following trends, and hoping to catch the next opportunity.
+                </p>
+                <p class="text-xl text-gray-300 mb-6 leading-relaxed">
+                    But the real advantage belongs to the people who understand how projects are built from the inside how communities grow, how momentum starts, and how value is created.
+                </p>
+            </div>
+            <div class="block mt-12 md:mt-0 p-8 border border-red-900/50 bg-black/50 backdrop-blur-sm">
+                <h3 class="text-2xl font-bold mb-4 text-red-500 uppercase tracking-widest">DOES THIS SOUND LIKE YOU?</h3>
+                <ul class="space-y-4 text-gray-300">
+                    <li class="flex items-center"><span class="w-2 h-2 bg-red-600 mr-3"></span>You follow crypto but want deeper understanding</li>
+                    <li class="flex items-center"><span class="w-2 h-2 bg-red-600 mr-3"></span>You feel like you're always late to opportunities</li>
+                    <li class="flex items-center"><span class="w-2 h-2 bg-red-600 mr-3"></span>You want to be involved, not just watch</li>
+                    <li class="flex items-center"><span class="w-2 h-2 bg-red-600 mr-3"></span>You know there’s more you could be doing</li>
+                </ul>
             </div>
         </div>
-    </header>
+    </section>
 
-    <!-- ========= MOBILE MENU ========= -->
-    <div id="mobile-menu" class="mobile-menu">
-        <button id="close-menu-btn" class="close-menu-btn"><i class="fas fa-times"></i></button>
-        <nav>
-            <a href="#services" class="mobile-link">Services</a>
-            <a href="#ecosystem" class="mobile-link">Ecosystem</a>
-            <a href="#plans" class="mobile-link">Plans</a>
-            <a href="#results" class="mobile-link">Track Record</a>
-            <a href="#contact" class="mobile-link highlight">Start Growth</a>
-        </nav>
-    </div>
+    <!-- Section 3: The Reality -->
+    <section id="reality" class="relative section-height py-20 flex items-center justify-center overflow-hidden border-b border-red-900/30">
+        <div class="absolute inset-0 z-0 bg-neutral-900">
+            <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover opacity-70">
+                <source src="03.mp4" type="video/mp4">
+            </video>
+            <div class="absolute inset-0 bg-gradient-to-r from-black via-black/40 to-transparent"></div>
+        </div>
 
-    <main>
-        <!-- ========= HERO SECTION (AP STYLE - BOLD & CLEAN) ========= -->
-        <section class="hero-section">
-            <div class="container">
-                <div class="hero-grid">
-                    <div class="hero-text-area">
-                        <h1 class="hero-title">WE SCALE <br><span class="text-red">WEB3 GIANTS.</span></h1>
-                        <p class="hero-subtitle">
-                            Strategic growth. Viral narratives. Community cults. 
-                            We transform projects into market leaders through surgical marketing execution.
-                        </p>
-                        <div class="hero-stats">
-                            <div class="stat-box">
-                                <span class="stat-num">500+</span>
-                                <span class="stat-desc">CAMPAIGNS</span>
-                            </div>
-                            <div class="stat-box">
-                                <span class="stat-num">$50M+</span>
-                                <span class="stat-desc">VALUE GENERATED</span>
-                            </div>
-                        </div>
-                        <div class="hero-cta">
-                            <a href="#vision" class="btn btn-primary btn-large">Contact Us <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <!-- HERO VIDEO CONTAINER -->
-                    <div class="hero-video-wrapper">
-                        <div class="video-container">
-                            <!-- Placeholder for video or actual video tag -->
-                            <video id="hero-video" autoplay muted loop playsinline poster="https://placehold.co/600x400/1a1a1a/333333?text=Hero+Video">
-                                <source src="horizontal.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <div class="video-overlay"></div>
-                            <button id="mute-btn" class="mute-btn" aria-label="Toggle Sound">
-                                <i class="fas fa-volume-mute"></i>
-                            </button>
-                        </div>
-                    </div>
+        <div class="relative z-10 px-6 max-w-6xl mx-auto w-full">
+            <div class="md:w-2/3">
+                <h2 class="text-4xl md:text-7xl font-black mb-8 tracking-tighter text-white">
+                    THE REAL GAME IS HAPPENING <span class="text-red-600">NOW.</span>
+                </h2>
+                <p class="text-2xl text-white font-light mb-8 leading-normal border-l-4 border-red-600 pl-6">
+                    "Most people chase trends. A few learn how trends are created."
+                </p>
+                <p class="text-lg text-gray-400 mb-6 leading-relaxed max-w-2xl">
+                    Crypto moves fast, and attention is the most valuable asset in the space.
+                </p>
+                <p class="text-lg text-gray-400 mb-6 leading-relaxed max-w-2xl">
+                    While most people scroll, react, and speculate, a smaller group studies how launches work, how communities grow, and how positioning happens early.
+                </p>
+                <p class="text-lg text-gray-400 mb-6 leading-relaxed max-w-2xl">
+                    This isn’t just about trading. <br>
+                    It’s about understanding the structure behind the movement.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: The Method -->
+    <section id="blueprint" class="relative section-height py-20 flex items-center justify-center overflow-hidden border-b border-red-900/30">
+        <div class="absolute inset-0 z-0 bg-neutral-900">
+            <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover opacity-70">
+                <source src="05.mp4" type="video/mp4">
+            </video>
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 max-w-6xl mx-auto">
+            <h2 class="text-red-600 font-bold tracking-[0.5em] uppercase mb-4">THE BLUEPRINT</h2>
+            <h2 class="text-4xl md:text-6xl font-black mb-16 tracking-tight text-white">
+                RED PILL <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800">METHOD</span>
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-neutral-900/80 p-8 border border-red-900/50 shadow-[0_0_20px_rgba(220,38,38,0.1)] hover:shadow-[0_0_30px_rgba(220,38,38,0.2)] hover:border-red-600 transition-all duration-300 group">
+                    <div class="text-5xl font-black text-red-600 mb-4 transition-colors">01</div>
+                    <h3 class="text-xl font-bold text-white mb-3 uppercase">THINK DIFFERENT</h3>
+                    <p class="text-gray-400 text-sm">Most people stay stuck consuming. <br> We train you to think, move, and act like a founder.</p>
+                </div>
+                <div class="bg-neutral-900/80 p-8 border border-red-900/50 shadow-[0_0_20px_rgba(220,38,38,0.1)] hover:shadow-[0_0_30px_rgba(220,38,38,0.2)] hover:border-red-600 transition-all duration-300 group">
+                    <div class="text-5xl font-black text-red-600 mb-4 transition-colors">02</div>
+                    <h3 class="text-xl font-bold text-white mb-3 uppercase">BUILD REAL VALUE</h3>
+                    <p class="text-gray-400 text-sm">Learn how crypto projects actually grow from the inside: <br> community, attention, positioning, and execution.</p>
+                </div>
+                <div class="bg-neutral-900/80 p-8 border border-red-900/50 shadow-[0_0_20px_rgba(220,38,38,0.1)] hover:shadow-[0_0_30px_rgba(220,38,38,0.2)] hover:border-red-600 transition-all duration-300 group">
+                    <div class="text-5xl font-black text-red-600 mb-4 transition-colors">03</div>
+                    <h3 class="text-xl font-bold text-white mb-3 uppercase">CREATE INCOME</h3>
+                    <p class="text-gray-400 text-sm">Use high-value skills to build assets, launch ideas, and access real opportunities in Web3.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- ========= CLIENTS / ECOSYSTEM (MARQUEE) ========= -->
-        <section id="ecosystem" class="ecosystem-section">
-            <div class="marquee-wrapper">
-                <div class="marquee-content">
-                    <!-- Set 1 -->
-                    <span class="marquee-item crypto-eth"><i class="fab fa-ethereum"></i> ETHEREUM</span>
-                    <span class="marquee-item crypto-mega"><img src="logoM.jpg" alt="MegaETH" class="crypto-icon" style="border-radius: 50%;"> MEGA ETH</span>
-                    <span class="marquee-item crypto-btc"><i class="fab fa-bitcoin"></i> BITCOIN</span>
-                    <span class="marquee-item crypto-sol"><img src="https://cryptologos.cc/logos/solana-sol-logo.png?v=026" alt="Solana" class="crypto-icon"> SOLANA</span>
-                    <span class="marquee-item crypto-matic"><img src="https://cryptologos.cc/logos/polygon-matic-logo.png?v=026" alt="Polygon" class="crypto-icon"> POLYGON</span>
-                    <span class="marquee-item crypto-avax"><img src="https://cryptologos.cc/logos/avalanche-avax-logo.png?v=026" alt="Avalanche" class="crypto-icon"> AVALANCHE</span>
-                    <span class="marquee-item crypto-arb"><img src="https://cryptologos.cc/logos/arbitrum-arb-logo.png?v=026" alt="Arbitrum" class="crypto-icon"> ARBITRUM</span>
-                    <span class="marquee-item crypto-bnb"><img src="https://cryptologos.cc/logos/bnb-bnb-logo.png?v=026" alt="BNB" class="crypto-icon"> BINANCE</span>
-                    
-                    <!-- Set 2 (Duplicate for infinite scroll) -->
-                    <span class="marquee-item crypto-eth"><i class="fab fa-ethereum"></i> ETHEREUM</span>
-                    <span class="marquee-item crypto-mega"><img src="logoM.jpg" alt="MegaETH" class="crypto-icon" style="border-radius: 50%;"> MEGA ETH</span>
-                    <span class="marquee-item crypto-btc"><i class="fab fa-bitcoin"></i> BITCOIN</span>
-                    <span class="marquee-item crypto-sol"><img src="https://cryptologos.cc/logos/solana-sol-logo.png?v=026" alt="Solana" class="crypto-icon"> SOLANA</span>
-                    <span class="marquee-item crypto-matic"><img src="https://cryptologos.cc/logos/polygon-matic-logo.png?v=026" alt="Polygon" class="crypto-icon"> POLYGON</span>
-                    <span class="marquee-item crypto-avax"><img src="https://cryptologos.cc/logos/avalanche-avax-logo.png?v=026" alt="Avalanche" class="crypto-icon"> AVALANCHE</span>
-                    <span class="marquee-item crypto-arb"><img src="https://cryptologos.cc/logos/arbitrum-arb-logo.png?v=026" alt="Arbitrum" class="crypto-icon"> ARBITRUM</span>
-                    <span class="marquee-item crypto-bnb"><img src="https://cryptologos.cc/logos/bnb-bnb-logo.png?v=026" alt="BNB" class="crypto-icon"> BINANCE</span>
-                </div>
-            </div>
-        </section>
+    <!-- Section 5: CTA / Join -->
+    <section id="join" class="relative section-height py-20 flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0 bg-neutral-900">
+            <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover opacity-80">
+                <source src="assets/video5.mp4" type="video/mp4">
+            </video>
+            <canvas id="matrix-bg" class="absolute inset-0 w-full h-full opacity-70"></canvas>
+            <div class="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black/50"></div>
+        </div>
 
-        <!-- ========= SERVICES (AP STYLE - GRID & HOVER) ========= -->
-        <section id="services" class="services-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>OUR GROWTH ARSENAL</h2>
-                    <p>End-to-end solutions for blockchain dominance.</p>
-                </div>
-
-                <div class="services-grid">
-                    <!-- Service 1 -->
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fas fa-users"></i></div>
-                        <h3>Community Growth</h3>
-                        <p>We attract, retain, and engage Web3 community members, driving meaningful growth and lasting brand loyalty.</p>
-                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                    <!-- Service 2 -->
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fas fa-bullhorn"></i></div>
-                        <h3>Influencer Marketing</h3>
-                        <p>Targeted KOL campaigns that amplify visibility and credibility across the crypto ecosystem.</p>
-                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                    <!-- Service 3 -->
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fas fa-handshake"></i></div>
-                        <h3>Strategic Partnerships</h3>
-                        <p>We establish strategic blockchain partnerships aligned with your project's long-term growth objectives.</p>
-                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                    <!-- Service 4 -->
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
-                        <h3>Web3 Branding</h3>
-                        <p>Impactful visual identities tailored specifically for Web3, positioning you clearly in your market.</p>
-                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                    <!-- Service 5 -->
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fas fa-rocket"></i></div>
-                        <h3>Advisory & Strategy</h3>
-                        <p>Navigate the complexities of blockchain marketing with our expert strategic guidance.</p>
-                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                    <!-- Service 6 -->
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fas fa-code"></i></div>
-                        <h3>Development</h3>
-                        <p>Technical expertise to build, launch, and scale dApps, NFT platforms, and token ecosystems.</p>
-                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-        <!-- ========= GET A DEMO (NEW) ========= -->
-        <section class="demo-section">
-            <div class="container">
-                <div class="demo-card">
-                    <h2>See Red Pill in Action</h2>
-                    <p>Not ready to commit? Get a personalized walkthrough of our growth systems and see exactly how we can scale your project.</p>
-                    
-                    <div class="demo-features">
-                        <div class="demo-feature-item"><i class="fas fa-chart-pie"></i> Live Case Studies</div>
-                        <div class="demo-feature-item"><i class="fas fa-cogs"></i> System Walkthrough</div>
-                        <div class="demo-feature-item"><i class="fas fa-lightbulb"></i> Custom Strategy</div>
-                    </div>
-
-                    <a href="#contact" class="btn btn-primary btn-large btn-pulse">Get a Free Demo</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- ========= OUR PLANS (NEW) ========= -->
-        <section id="plans" class="plans-section">
-            <div class="container">
-                <div class="section-header center-text">
-                    <h2>CHOOSE YOUR PATH</h2>
-                    <p>Tailored packages for every stage of growth.</p>
-                </div>
-                
-                <div class="plans-grid">
-                    <!-- PLAN 1: BUILDER PACK -->
-                    <div class="plan-card">
-                        <div class="plan-header">
-                            <h3>BUILDER PACK</h3>
-                            <p>For New Launches</p>
-                        </div>
-                        <ul class="plan-features">
-                            <li><i class="fas fa-check-circle"></i> Project Creation: Full conceptualization and initial setup.</li>
-                            <li><i class="fas fa-check-circle"></i> Project Launch: End-to-end execution of the market entry.</li>
-                            <li><i class="fas fa-check-circle"></i> Alpha Landing Page: Design and deployment of the initial web presence.</li>
-                            <li><i class="fas fa-check-circle"></i> Team Assignment: Dedicated staff allocation (Mods, Admins, Designers, etc.).</li>
-                            <li><i class="fas fa-check-circle"></i> Discord Setup: Comprehensive server architecture and configuration.</li>
-                            <li><i class="fas fa-check-circle"></i> 24/7 Advisory: Round-the-clock expert consultancy and support.</li>
-                        </ul>
-                        <a href="#contact" class="btn btn-primary btn-full btn-pulse">Get for $1,850</a>
-                    </div>
-
-                    <!-- PLAN 2: OG PACK -->
-                    <div class="plan-card og-pack">
-                        <div class="plan-header">
-                            <h3>OG PACK</h3>
-                            <p>For Market Domination</p>
-                        </div>
-                        <ul class="plan-features">
-                            <li><i class="fas fa-check-circle"></i> Project Creation: Comprehensive conceptualization and strategic setup.</li>
-                            <li><i class="fas fa-check-circle"></i> Professional 3D Landing Page: High-end web design with 3D elements and immersive UI.</li>
-                            <li><i class="fas fa-check-circle"></i> Team Assignment: Dedicated staff allocation (Mods, Admins, Designers, etc.).</li>
-                            <li><i class="fas fa-check-circle"></i> Discord Setup: Advanced server architecture, security, and bot configuration.</li>
-                            <li><i class="fas fa-check-circle"></i> Full Social Media Marketing: Short-form video strategy (Shorts/Reels/TikTok) across Instagram, TikTok, and YouTube.</li>
-                            <li><i class="fas fa-check-circle"></i> Custom Mascot Marketing: Creation and promotion of high-quality YouTube videos featuring a specialized pixel-art mascot.</li>
-                        </ul>
-                        <a href="#contact" class="btn btn-primary btn-full btn-pulse">Contact Us</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ========= VISION SECTION (NEW) ========= -->
-        <section id="vision" class="vision-section" style="padding: 100px 0; background: #fcfcfc; border-top: 1px solid #e5e5e5; text-align: center;">
-            <div class="container">
-                <div class="section-header" style="margin-bottom: 0;">
-                    <h2 style="font-size: 4rem; line-height: 1.1; margin-bottom: 20px;">MAKING YOUR VISION A REALITY</h2>
-                    <p style="font-size: 1.5rem; max-width: 800px; margin: 0 auto; color: #333;">Speed, quality, and support Non-negotiable. <br> <span style="color: #8ACF59; font-weight: 700;">Let’s win together.</span></p>
-                    
-                    <div class="vision-buttons" style="margin-top: 40px; display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-                        <a href="https://t.me/xswandx5" target="_blank" class="btn btn-vision">
-                            <i class="fab fa-telegram-plane"></i> Telegram
-                        </a>
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=redpilllabscontact@gmail.com" target="_blank" class="btn btn-vision">
-                            <i class="fas fa-envelope"></i> Email
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ========= TEAM SECTION (NEW) ========= -->
-        <section id="team" class="team-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>THE OPERATORS</h2>
-                    <p>15+ Specialists Driving Crypto, DeFi & NFT Growth.</p>
-                </div>
-                <div class="team-grid">
-                    <!-- Member 1 -->
-                    <div class="team-card">
-                        <div class="member-image">
-                            <img src="maurophp.png" alt="CEO">
-                        </div>
-                        <div class="member-info">
-                            <h3>xSwap</h3>
-                            <span class="member-role">Chief Executive Officer (CEO)</span>
-                        </div>
-                    </div>
-                    <!-- Member 2 -->
-                    <div class="team-card">
-                        <div class="member-image">
-                            <img src="negrophp.png" alt="COO">
-                        </div>
-                        <div class="member-info">
-                            <h3>Wknez</h3>
-                            <span class="member-role">Chief Marketing Officer (CMO)</span>
-                        </div>
-                    </div>
-                    <!-- Member 3 -->
-                    <div class="team-card">
-                        <div class="member-image">
-                            <img src="ryanphp.png" alt="CMO">
-                        </div>
-                        <div class="member-info">
-                            <h3>ryan Σ:</h3>
-                            <span class="member-role">Chief Operating Officer (COO)</span>
-                        </div>
-                    </div>
-                    <!-- Member 4 -->
-                    <div class="team-card">
-                        <div class="member-image">
-                            <img src="danphp.png" alt="Dev Lead">
-                        </div>
-                        <div class="member-info">
-                            <h3>Dan</h3>
-                            <span class="member-role">Chief Technology Officer (CTO)</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ========= IMPACT METRICS (STATS) ========= -->
-        <section id="results" class="metrics-section">
-            <div class="container">
-                <div class="section-header center-text">
-                    <h2>OUR IMPACT</h2>
-                    <p>Numbers don't lie. We deliver measurable growth.</p>
-                </div>
-                <div class="metrics-grid">
-                    <!-- Stat 1 -->
-                    <div class="metric-card">
-                        <div class="metric-icon"><i class="fas fa-chart-line"></i></div>
-                        <span class="metric-value">$500M+</span>
-                        <span class="metric-label">TOTAL VALUE LOCKED GENERATED</span>
-                    </div>
-                    <!-- Stat 2 -->
-                    <div class="metric-card">
-                        <div class="metric-icon"><i class="fas fa-users"></i></div>
-                        <span class="metric-value">2.5M+</span>
-                        <span class="metric-label">COMMUNITY MEMBERS ONBOARDED</span>
-                    </div>
-                    <!-- Stat 3 -->
-                    <div class="metric-card">
-                        <div class="metric-icon"><i class="fas fa-handshake"></i></div>
-                        <span class="metric-value">150+</span>
-                        <span class="metric-label">STRATEGIC PARTNERSHIPS CLOSED</span>
-                    </div>
-                    <!-- Stat 4 -->
-                    <div class="metric-card">
-                        <div class="metric-icon"><i class="fas fa-bullseye"></i></div>
-                        <span class="metric-value">50+</span>
-                        <span class="metric-label">SUCCESSFUL TGE LAUNCHES</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ========= CONTACT CTA (SCHEDULE CALL) ========= -->
-        <section id="contact" class="contact-section">
-            <div class="container">
-                <div class="contact-wrapper">
-                    <div class="contact-text">
-                        <h2>Book Your Strategy Session</h2>
-                        <p>Schedule a time with our team to discuss your project's growth.</p>
-                        <div style="margin-top: 30px; padding: 20px; background: rgba(138, 207, 89, 0.1); border-left: 4px solid #8ACF59; border-radius: 4px;">
-                            <p style="font-size: 0.95rem; margin: 0; color: #555;"><i class="fas fa-info-circle" style="color: #8ACF59; margin-right: 8px;"></i> After submitting, you will be redirected to our Telegram for immediate confirmation.</p>
-                        </div>
-                    </div>
-                    <form id="booking-form" class="contact-form">
-                        <div class="form-group">
-                            <label for="name" style="display: block; margin-bottom: 8px; font-weight: 600; color: #333;">Full Name</label>
-                            <input type="text" id="name" name="name" placeholder="John Doe" required>
-                        </div>
-                        
-                        <!-- NEW PREFERENCE SELECTION -->
-                        <div class="form-group">
-                            <label style="display: block; margin-bottom: 8px; font-weight: 600; color: #333;">Preferred Communication</label>
-                            <div class="radio-group" style="display: flex; gap: 20px;">
-                                <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-weight: 500;">
-                                    <input type="radio" name="preference" value="call" checked style="accent-color: #8ACF59;">
-                                    <i class="fas fa-phone-alt" style="color: #555; transform: scaleX(-1);"></i> Call
-                                </label>
-                                <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-weight: 500;">
-                                    <input type="radio" name="preference" value="message" style="accent-color: #8ACF59;">
-                                    <i class="fas fa-comment-dots" style="color: #555;"></i> Message
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="form-group-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-                            <div class="form-group">
-                                <label for="date" style="display: block; margin-bottom: 8px; font-weight: 600; color: #333;">Preferred Date</label>
-                                <input type="date" id="date" name="date" required style="cursor: pointer;">
-                            </div>
-                            <div class="form-group">
-                                <label for="time" style="display: block; margin-bottom: 8px; font-weight: 600; color: #333;">Preferred Time</label>
-                                <input type="time" id="time" name="time" required style="cursor: pointer;">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="project" style="display: block; margin-bottom: 8px; font-weight: 600; color: #333;">Project Name / Website</label>
-                            <input type="text" id="project" name="project" placeholder="My Project" required>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary btn-full">Schedule Strategy <i class="fab fa-telegram-plane"></i></button>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <!-- ========= CHOICE SECTION (NEW - BASED ON IMAGE) ========= -->
-        <section class="choice-section">
-            <div class="container">
-                <div class="section-header center-text">
-                    <h2 style="color: #0F1115;">READY FOR A <span style="color: #8ACF59;">DIFFERENT</span> PATH?</h2>
-                </div>
-                
-                <div class="choice-grid">
-                    <!-- Option 1: Founder (Lab) -->
-                    <a href="https://www.redpillacademy.xyz/" target="_blank" class="choice-card red-pill">
-                        <div class="pill-icon red"><i class="fas fa-flask"></i></div>
-                        <h3>I’m new, I want to learn</h3>
-                        <p class="choice-subtitle">From Zero to Web3 Founder</p>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <h2 class="text-5xl md:text-7xl font-black mb-8 tracking-tighter text-white uppercase">
+                STAY COMFORTABLE <br>OR <span class="text-red-600">LEVEL UP</span>?
+            </h2>
+            <p class="text-xl md:text-2xl text-gray-200 mb-12 max-w-2xl mx-auto font-light">
+                Most people will ignore this moment and stay the same. <br>
+                A few will take action and build something real.
+            </p>
+            
+            <div class="bg-black/80 p-8 md:p-12 border border-red-600 max-w-2xl mx-auto backdrop-blur-md">
+                <h3 class="text-2xl font-bold text-white mb-8 uppercase tracking-widest">SELECT YOUR PATH</h3>
+                <div class="flex flex-col md:flex-row gap-6 justify-center">
+                    <a href="https://www.redpillacademy.xyz/" target="_blank" class="flex-1 bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 text-lg uppercase tracking-widest transition-all hover:shadow-[0_0_20px_rgba(220,38,38,0.5)] flex items-center justify-center">
+                        START LEARNING
                     </a>
-
-                    <!-- Option 2: Return Home (House) -->
-                    <a href="https://www.redpillmethod.xyz/" target="_blank" class="choice-card blue-pill">
-                        <div class="pill-icon blue"><i class="fas fa-home"></i></div>
-                        <h3>RETURN HOME</h3>
-                        <p class="choice-subtitle">BACK TO RED PILL METHOD</p>
+                    <a href="https://www.redpilllabs.xyz/" target="_blank" class="flex-1 border border-white hover:bg-white hover:text-black text-white font-bold py-4 px-8 text-lg uppercase tracking-widest transition-all flex items-center justify-center">
+                        BUILD MY PROJECT
                     </a>
                 </div>
+                <div class="flex justify-center mt-6">
+                    <a href="https://t.me/cryptoredpillmethod" target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center justify-center gap-3 px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-bold text-lg uppercase tracking-widest transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_30px_rgba(220,38,38,0.6)] border border-red-500 rounded-sm w-full md:w-auto">
+                        <svg class="w-6 h-6 fill-current transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0 .056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                        </svg>
+                        <span>Join Telegram</span>
+                    </a>
+                </div>
+                <p class="mt-8 text-xs text-gray-500 uppercase tracking-widest">Limited spots available.</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-    </main>
+    <!-- Footer -->
+    <footer class="bg-neutral-950 border-t border-red-900/20 py-16 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
+            <div class="col-span-1 md:col-span-2">
+                <div class="text-2xl font-black text-white tracking-tighter mb-4">
+                    RED PILL <span class="text-red-600">METHOD</span>
+                </div>
+                <p class="text-gray-500 text-sm leading-relaxed max-w-sm">
+                    The ultimate blueprint for understanding crypto markets, building real value, and achieving financial sovereignty. Stop watching. Start building.
+                </p>
+            </div>
+            
+            <div>
+                <h4 class="text-white font-bold uppercase tracking-widest mb-6 text-sm">Platform</h4>
+                <ul class="space-y-4 text-sm text-gray-500 font-medium">
+                    <li><a href="#problem" class="hover:text-red-600 transition-colors">The Problem</a></li>
+                    <li><a href="#reality" class="hover:text-red-600 transition-colors">The Reality</a></li>
+                    <li><a href="#blueprint" class="hover:text-red-600 transition-colors">The Blueprint</a></li>
+                </ul>
+            </div>
 
-    <footer>
-        <div class="container footer-content">
-            <div class="footer-col">
-                <a href="#" class="brand-logo small">RED PILL LABS.</a>
-                <p>&copy; 2025 Red Pill Agency.</p>
+            <div>
+                <h4 class="text-white font-bold uppercase tracking-widest mb-6 text-sm">Connect</h4>
+                <ul class="space-y-4 text-sm text-gray-500 font-medium">
+                    <li><a href="terms.html" class="hover:text-red-600 transition-colors">Terms of Service</a></li>
+                    <li><a href="privacy.html" class="hover:text-red-600 transition-colors">Privacy Policy</a></li>
+                    <li><a href="https://t.me/cryptoredpillmethod" target="_blank" class="hover:text-red-600 transition-colors flex items-center gap-2 group">
+                        <svg class="w-4 h-4 fill-current group-hover:text-red-600 transition-colors" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0 .056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                        <span>Telegram</span>
+                    </a></li>
+                </ul>
             </div>
-            <div class="footer-col links">
-                <a href="#">Services</a>
-                <a href="#">Case Studies</a>
-                <a href="#">Contact</a>
-            </div>
-            <div class="footer-col links social-icons-only">
-                <a href="https://www.youtube.com/@RedPillMethod" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                <a href="https://x.com/redpilllabs_?s=11" target="_blank" aria-label="X (Twitter)">
-                    <!-- Inline SVG for X Logo to ensure visibility -->
-                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" style="fill: currentColor; width: 1em; vertical-align: -0.125em;">
-                        <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM365.7 444h33.5L110.5 69H72.9L365.7 444z"/>
-                    </svg>
-                </a>
-                <a href="https://t.me/cryptoredpillmethod" target="_blank" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
-                <a href="https://www.instagram.com/cryptoredpillz?igsh=MTdzY3dzaWl2dGFndg%3D%3D&utm_source=qr" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+        
+        <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-neutral-900 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="text-xs text-neutral-600 uppercase tracking-widest">
+                © 2026 Red Pill Method. All rights reserved.
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        const canvas = document.getElementById('matrix-bg');
+        const ctx = canvas.getContext('2d');
+
+        // Set canvas size
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const katakana = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン';
+        const latin = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        const nums = '0123456789';
+        const alphabet = katakana + latin + nums;
+
+        const fontSize = 16;
+        const columns = canvas.width / fontSize;
+
+        const rainDrops = [];
+
+        for( let x = 0; x < columns; x++ ) {
+            rainDrops[x] = 1;
+        }
+
+        const draw = () => {
+            // Black background with opacity for trail effect
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = '#DC2626'; // Red-600
+            ctx.font = fontSize + 'px monospace';
+
+            for(let i = 0; i < rainDrops.length; i++) {
+                // Random character
+                const text = alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+                
+                // Slight variation in color for "different style"
+                if(Math.random() > 0.95) {
+                    ctx.fillStyle = '#FFFFFF'; // White flash
+                } else {
+                    ctx.fillStyle = '#DC2626'; // Red
+                }
+
+                ctx.fillText(text, i*fontSize, rainDrops[i]*fontSize);
+
+                // Reset drop to top randomly
+                if(rainDrops[i]*fontSize > canvas.height && Math.random() > 0.975){
+                    rainDrops[i] = 0;
+                }
+                rainDrops[i]++;
+            }
+        };
+
+        setInterval(draw, 30);
+
+        // Handle resize
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            // Re-initialize columns
+            const newColumns = canvas.width / fontSize;
+            rainDrops.length = 0;
+            for( let x = 0; x < newColumns; x++ ) {
+                rainDrops[x] = 1;
+            }
+        });
+    </script>
 </body>
 </html>
